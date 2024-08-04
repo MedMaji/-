@@ -1,0 +1,24 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+	cout << "Введите высоту треугольника: " << endl;
+	int height;
+	cin >> height;
+
+	for (int i = 0; i <= height; i++)
+	{
+		for (int l = 0; l < height - i; l++)
+		{
+			cout << " ";
+		}
+		for (int l = 0; l <= i; l++)
+		{
+			cout << "* ";
+		}
+		cout << endl;
+	}
+	return 0;
+}
