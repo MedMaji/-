@@ -1,0 +1,11 @@
+#include "pch.h"
+#include "C:\Users\DS\source\repos\Project4\Project4\Source.cpp"
+
+using namespace std;
+
+TEST(CaseVector, Test)
+{
+	vector<int> v{ 1, 2, 6, 7, 9, 0 };
+
+	EXPECT_THROW(v.at(0), out_of_range);
+}
